@@ -12,5 +12,6 @@ const { mix } = require('laravel-mix');
  */
 
 mix.js('resources/assets/js/app.js', 'public/js')
-   .less('./node_modules/admin-lte/build/less/AdminLTE.less', 'public/css/adminlte-less.css');
+    .copy('node_modules/admin-lte/dist/img','public/img')
+    .less('./node_modules/admin-lte/build/less/AdminLTE.less', 'public/css/adminlte-less.css');
 
